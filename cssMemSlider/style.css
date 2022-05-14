@@ -1,0 +1,107 @@
+:root {
+  font-size: clamp(1rem, 0.5rem + 2vw, 1.625rem);
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 20em;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.slider {
+  width: 20em;
+  overflow: hidden;
+}
+
+.slides-list {
+  display: flex;
+  width: 400%;
+  transition: all 0.3s ease-out;
+}
+
+.slides-text {
+  display: flex;
+  width: 400%;
+  transition: all 0.3s ease-out;
+}
+
+.slides-text > * {
+  width: 20em;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+#slide-1:checked ~ .slides-list {
+  transform: translateX(0);
+}
+
+#slide-1:checked ~ .slides-text {
+  transform: translateX(0);
+}
+
+#slide-2:checked ~ .slides-list {
+  transform: translateX(-25%);
+}
+
+#slide-2:checked ~ .slides-text {
+  transform: translateX(-25%);
+}
+
+#slide-3:checked ~ .slides-list {
+  transform: translateX(-50%);
+}
+
+#slide-3:checked ~ .slides-text {
+  transform: translateX(-50%);
+}
+
+#slide-4:checked ~ .slides-list {
+  transform: translateX(-75%);
+}
+
+#slide-4:checked ~ .slides-text {
+  transform: translateX(-75%);
+}
+
+.dots {
+  width: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+label {
+  margin: 0 10px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border: 4px solid red;
+  border-radius: 100%;
+}
