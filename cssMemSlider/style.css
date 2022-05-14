@@ -1,11 +1,11 @@
 :root {
-  font-size: clamp(1rem, 0.5rem + 2vw, 1.625rem);
+  font-size: 2em;
   box-sizing: border-box;
 
-  --light: #ff7f67;
+  --light: #ffd5cd;
   --white: #fcf1f1;
   --dark: #1a1c20;
-  --blue: #f9813a;
+  --orange: #f9813a;
 }
 
 * {
@@ -21,7 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2em;
+  padding: 0.5em;
 }
 
 li {
@@ -61,18 +61,18 @@ input[type="radio"] {
   overflow: hidden;
   grid-column: 1 / 3;
   grid-row: 3 / 4;
+  height: 6em;
 }
 
 .slides-text {
+  font-size: 0.8rem;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   height: 400%;
   transition: all 0.3s ease-out;
 }
 
 .slides-text > * {
-  overflow: hidden;
   height: 100%;
 }
 
@@ -112,11 +112,7 @@ input[type="radio"] {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
   justify-self: center;
-  width: 5em;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1em;
 }
 
 label {
@@ -133,8 +129,8 @@ label span {
   width: 0.5em;
   height: 0.5em;
   display: block;
-  background-color: var(--blue);
-  border: 4px solid var(--blue);
+  background-color: var(--orange);
+  border: 0.1em solid var(--orange);
 }
 
 label:hover span {
@@ -155,11 +151,15 @@ label:active span {
 }
 
 @media (min-width: 768px) {
+  :root {
+    font-size: 1.8em;
+  }
   .text-wrapper {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
   .dots {
+    justify-self: end;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
