@@ -151,7 +151,7 @@ label:active span {
   background-color: transparent;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   :root {
     font-size: calc(0.9em + 1vw);
   }
