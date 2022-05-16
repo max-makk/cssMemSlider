@@ -142,6 +142,7 @@ label:hover span {
 label:active span {
   background-color: var(--light);
   border-color: var(--light);
+  box-shadow: 0 0 0.3em 0.1em var(--light);
 }
 
 #slide-1:checked ~ .dots label[for="slide-1"] span,
